@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ajouter une personne</title>
+</head>
+<body>
+  <h1>Ajouter une personne</h1>
+<form action="/newPerson" method="post">
+  <label>Username :</label>
+  <input type="text" th:field="${person.username}"/>
+  <label>Company name :</label>
+  <input type="text" th:field="${person.companyName}"/>
+  <label>Birth date :</label>
+  <input type="date" th:field="${person.birthDate}"/>
+  <button type="submit">Submit</button>
+</form>
+</body>
+</html>
